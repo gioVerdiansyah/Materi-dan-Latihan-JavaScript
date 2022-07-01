@@ -1,0 +1,59 @@
+Value/Nilai
+nilai-nilai terbentuk dari sekumpulan bit dan nilai tersebut memiliki perannya masing-masing, dan peran inilah yang nantinya kita sebut degan tipe data.
+di dalam JavaScript ada 6 tipe data:
+
+1.) number 
+2.) string
+3.) boolean
+4.) object
+5.) function
+6.) undefined
+
+Jadi ini adalah peran dari bit-bit yang ada di dalam komputer kita, untuk membuat atau menggunakan sebuah nilai kita hanya perlu memanggil namanya.
+
+Misalnya:
+-number
+10
+-1500
+3.14
+maka nanti komputer akan secara otomatis membuatkan sebuah nilai yang tipe datanya number.
+
+-string
+maka cukup aja menuliskan tulisannya (huruf) di dalam sebuah kutip, boleh kutip satu atau dua saya sarankan harus konsisten
+"test"
+'test'
+
+Tipe Data selanjutnya akan dibahas nanti.
+
+
+ANGKA 
+angka pada JavaScript katanya:
+`` number in JavaScript are double-precision floating point 64-bit format IEEE 754 value ``
+artinya di dalam JavaScript tidak ada INTEGER/bilangan bulat yang ada hanya lah FLOATING POINT/bilangan pecahan.
+dan ukuran angka yang dapat di tampung adalah 64-bit ini artinya kita dapat menampung angka sebanyak 2 pangkat 64 atau sebesar 18 x 10 pangkat 18 atau sebesar 18 x 1000 000 000 000 000 000 (18 x 1 miliar miliar) atau persisnya sebanyak 18446744073709551616
+
+Tapi angka ini tidak bisa kita pakai semua kenapa? karena di dalam 64 bit tadi ada beberapa penanda yang nanti harus kita gunakan untuk menampung angka-angka tertentu.
+
+ada beberapa angka yang dapat kita simpan di JavaScript:
+- Angka tanpa desimal  (integer) = 10,1500,123456 (di belakang layar di proses menjadi angka desimal) tapi kalau lebih dari 15 digit angkanya maka akan di bulatkan menjadi angka yang berbeda.
+- Angka dengan desimal (pecahan) = 3.14, 0.5. 100.00 (perlu di ingat koma dalam JavaScript adalah titik begitupun sebaliknya) maksimal kita hanya dapat menyimpan 17 digit di belakang koma.
+- Eksponen =123e5 /= 12300000, 123e-5 /= 0.00123
+- Bilangan negatif 
+
+urutan penggunaan bit:
+- satu bit digunakan penanda jika bilangannya negatif
+- sebelas bit digunakan Eksponen
+- dan sisanya 52 bit baru digunakan untuk angka sebenarnya termasuk titik koma.
+
+
+JANGAN PERNAH MENGAWALI ANGKA DENGAN 0 !!!
+Karena hasilnya kadang-kadang tidak sesuai dengan harapan kita.
+Dan angka nol juga dianggap sebagai bilangan oktal!!! (bilangan basis 8 jadi angkanya di mulai dari 0-7)
+
+SAMA JUGA DENGAN MENGAWALINYA DENGAN 0x
+Karena akan di anggap sebagi hexadesimal (0xFF) (bilangan basis 16 jadi dimulai 0- huruf F, 0-9 lalu A-F)
+
+Angka Spesial:
+- Infinity 2/0 = Infinity
+- -Infinity -2/0 = -Infinity
+- NaN 0/0 = NaN (Not a Number)

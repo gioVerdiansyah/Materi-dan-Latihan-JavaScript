@@ -1,0 +1,61 @@
+`` Variable adalah sebuah tempat atau wadah yang memiliki nama yang digunakan untuk menyimpan nilai ``
+Untuk memahami variable kita harus memahami 3 hal dulu, apa itu?
+- deklarasi
+- inisialisasi
+- assignment
+
+Deklarasi ini adalah sebuah tahap untuk mendaftarkan variable ke dalam lingkup yang sesuai
+Inisialisasi sebuah proses pemesanan atau penyediaan memori untuk variable
+Assignment yaitu menetapkan nilai yang spesifik ke dalam variable
+
+contoh
+
+let x; ini artinya mendeklarasikan sekaligus menginisialisasi
+
+lalu jika kita menulis baris selanjutnya x = 20;
+
+let X = 20;  ini artinya proses assignment, atau kita menugaskan angka 20 untuk disimpan kedalam variable x
+
+deklarasi variable:
+var <nama variable>
+
+keyword-keyword variable
+- var
+- let
+- const
+
+nanti kita gunakan let aja karena memiliki kelebihan, kalo yang var itu sendiri sudah tidak di sarankan oleh JavaScript
+
+ nama untuk variable sebenarnya bebas tapi ada bebrapa aturanya:
+- tidak boleh pake spasi
+- boleh mengandung angka tapi tidak boleh di awali oleh angka
+- boleh juga memakai simbol
+- atau kalian lebih baik menggunakan format camel case (contohSepertiIni)
+
+ada beberapa kata yang tidak boleh digunakan yaitu:
+keyword & reserved word ini adalah sebuah bagian dari syntax javascript
+ada lumayan banyak kalian cari sendiri aja
+kalian tidak perlu repot-repot menghafalkan semua kata-katanya nanti kalo tidak sengaja menulis katanya otomatis akan ada tanda merah-merah di kata tsb / error 
+
+shordhand yaitu menyingkat kata-kata variable 
+contohnya:
+
+let nama;
+let umur;
+let lulus;
+
+nama = "sofyan"
+umur = 15;
+lulus = true;
+
+yang mulanya seperti ini menjadi:
+let nama = "sofyan",
+    umur = 31,
+    lulus = true;
+
+
+harus menggunakan koma lalu nama variablenya apa dan nilainya
+
+didalam variable ada yang namanya : variable scope
+
+nanti akan dibahas

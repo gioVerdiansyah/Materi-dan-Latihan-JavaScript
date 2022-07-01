@@ -1,0 +1,29 @@
+Semuanya berawal dari NCSA (National Center of Supercumputing Application) ini adalah fasilitas riset di university of illinois at urbana-champaign di AS, disana ada peneliti beserta mahasiswanya membuat sebuah browser yang namanya MOSAIC BROWSER-1992, itu adalah browser populer pertama berdasarkan spesifikasi www dari tim berners lee , tim ini adalah penemu dari banyak sekali teknologi internet.
+
+Kenapa web browser MOSAIC populer? Karena MOSAIC ini dia mendukung Image Tag, jadi browser saat itu belom ada yang bisa menampilkan gambar secara inline yang bisa baru browser MOSAIC, jadi kalo mau nampilkan gambar biasanya di tampilkan di halaman yang berbeda.
+
+Kenapa ngga ada browser yang manampilkan gambar seperti MOSAIC ini? Karena memang spesifikasi dari berners lee tidak memperbolehkan itu, jadi memang MOSAIC ini melanggar spesifikasi yang diberikan.
+
+Setelah MOSAIC ini meraih popularitas akhirnya dua orang beserta peneliti yang membuatnya dan mahasiswanya tadi, lalu ia membuat perusahaan sendiri, perusahaan yang bernama Netscape Communicator/Mozila pada saat ini, dan mereka membuat kembali sebuah browser yang namanya Netscape Navigator, Netscape ini dibuat dengan fitur-fitur yang menarik dari MOSAIC dan tentu saja dengan lebih tidak memperdulikan lagi spesifikasi dari si bapak tim berners lee tadi, seperti menambakan text link,text formatting,scriptting,cookie,dll.
+
+Setelah beberapa waktu si Netscape ini bermaksud untuk membuat browser ini tambah keren lagi, menambakan interaktivitas di dalamnya, oleh karena itu Netscape merekrut orang yang bernama Brendan Eich (sistem engginer) dia diminta membuat bahasa scriptting seperti java tapi untuk web browser.
+
+Akhirnya dia membuat sebuah bahasa baru yang menggabungkan fitur-fitur dari bahasa Java+Schame+Self yang diberi nama dengan = Mocha , karena waktu mepet dengan harus di rilisnya Netscape Navigator versi 2 maka Mocha ini dibuat hanya dalam waktu 10 hari!!! jadi dalam 10 hari Brendan Eich ini berhasil membuat sebuah bahasa Mocha yang nantinya di implementasikan pada Netscape Navigator lalu Mocha ini akhirnya di ubah namanya menjadi = LiveScript , karena saat itu software-software yang ada di Netscape itu di depannya ada kata Livennya.
+
+Habis itu Netscape Navigator menjadi browser yang keren saat itu, si perusahaannya sampai-sampai memiliki ambisi untuk mengalahkan Microsoft. Jadi untuk mencapai ambisinya itu Netscape + mengajak Sun microsystem (yang punya java pada saat itu) VS Microsoft, jadi si Sun ini punya ide gimana kalau misalkan kita masukkan java kedalam Netscape Navigator untuk menggantikan LiveScript tapi Netscape ngga mau karena sebetulnya LiveScript itu sudah lebih teroptimasi untuk sebuah website, jadi akhirnya diputuskan begini "udah ganti aja nama LiveScript itu menjadi JavaScript, supaya orang-orang itu mengira bahwa itu adalah java yang digunakan untuk web browser".
+
+Setelah itu melihat Microsoft juga ngga mau mengalah, lalu mereka melakukan reverse engginering terhadap JavaScript (seperti dicontek) dan dibuat ulang untuk mereka sendiri dengan nama JScript . Dan Netscape panik, takut misalnya si JScript ini yang nantinya akan menjadi standar, lalu mereka mencoba menstandarkan JavaScript ini ke W3C tapi ternyata di tolak kemungkinan ditolak adalah karena di W3S ada tim berners lee, jadi Netscape ini cari-cari lagi ISO (Organisasi Standardisasi Internasional) lalu ketemu lah yang namanya ECMA INTERNASIONAL (European Computer Manufacturers Association) yang mau membuatkan standarnya dan pada tahun 1996 JavaScript pertama kali di standarkan, kenapa harus di standar kan? Supaya nantinya browser-browser lain itu bisa pake bahasa pemrogramman scriptting berdasarkan JavaScript. Pada saat di daftarkan namanya tidak boleh JavaScript karena lisnsinya masih dipegang oleh sun, sampai pada akhirnya diputuskan namanya adalah ECMAScript, lalu banyak orang-orang yang mengira JavaScript, JScript, ECMAScript adalah bahasa yang berbeda padahal sama. Seharusnya kita menyebutnya ECMAScript bukan JavaScript tapi berhubung terlanjur jadi di biarin.
+
+Perkembangan ECMAScript/ES
+1997, ES1
+1998, ES2
+1999, ES3 - Launch
+...
+2005, AJAX
+2008, ES4 GAGAL (dibuat ulang dengan project bernama ES Harmony)
+2009, ES5
+
+Default
+Strict
+2015, ES6
+2016, ES7

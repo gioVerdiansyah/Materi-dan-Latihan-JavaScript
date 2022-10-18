@@ -56,11 +56,54 @@
 
 
 
+{ //Spread
+    const favorites = ["Seafood", "Salad", "Nugget", "Soup"];
 
+    console.log(...favorites);
+    // fitur ini digunakan untuk menyebarkan nilai array atau lebih tepatnya iterable object menjadi beberapa elemen
+    // Spread operator dapat digunakan untuk menggabungkan dua buah array ke dalam array baru. Jika tidak menggunakan spread operator ini maka hasilnya akan seperti ini:
+    const others = ["Cake", "Pie", "Donut"];
+    const allFavorites = [favorites, others];
+
+    console.log(allFavorites);
+
+    /* output
+    [
+      [ 'Seafood', 'Salad', 'Nugget', 'Soup' ],
+      [ 'Cake', 'Pie', 'Donut' ]
+    ]
+    */
+
+    // Nilai array tidak akan tergabung. Alih-alih menggabungkan nilainya, variabel allFavorites menjadi array baru yang menampung dua array di dalamnya. Nah, lantas bagaimana jika kita mencoba menggunakan spread operator?
+    const favorites1 = ["Seafood", "Salad", "Nugget", "Soup"];
+
+    const allFavorites1 = [...favorites1, ...others];
+
+    console.log(allFavorites1);
+
+    /* output
+    [ 'Seafood', 'Salad', 'Nugget', 'Soup', 'Cake', 'Pie', 'Donut' ]
+    */
+    //    Yup, dengan menggunakan spread operator nilai dua array tersebut berhasil tergabung.
+
+    // Selain array, spread operator juga bisa digunakan untuk object literals. Hal ini memungkinkan kita dapat menggabungkan beberapa object dengan kode yang lebih ringkas.
+    const obj1 = { firstName: 'Obi-Wan', age: 30 };
+    const obj2 = { lastName: 'Kenobi', gender: 'M' };
+
+    const newObj = {...obj1, ...obj2 };
+
+    console.log(newObj);
+
+    /* output
+    { firstName: 'Obi-Wan', age: 30, lastName: 'Kenobi', gender: 'M' }
+    */
+}
 
 { //join
     let arry = ["verdi", "nofa", "sofyan"];
-    console.log(arry.join(" - ")) //hasilnya akan = verdi,nofa,sofyan
+    console.log(arry.join(" - "))
+        // mirip dengan Spread namun pada value join bisa di isi dengan string sebagai pembatas antara nama data yang lain
+        //hasilnya akan = verdi - nofa - sofyan
         //bukan lagi object yang seperti tadi, nah ini bagus
         //untuk menggantikan komanya, dalam kurung join bisa ditulis ("-") atau di tulis spasi doang agar tidak ada spasinya
 }
@@ -173,15 +216,14 @@
 
     // nah artinya kita ngga bisa menggunakan index awalnya dong?, kita bisa menggunakannya dengan cara :
 
-    {
-        let angka = [1, 2, 3, 4, 5, 6, 7, 8]
-        let nama = ["sofyan", "vedi", "dody"]
 
-        nama.forEach(function(e, i) {
-                console.log("Mahasiswa yang ke-" + (i + 1) + " dengan nama: " + e)
-            })
-            //maka yang i ini mengacu ke angka dan yang e ini mengacu ke nama
-    }
+    let nama = ["sofyan", "vedi", "dody"]
+
+    nama.forEach(function(e, i) {
+            console.log("Mahasiswa yang ke-" + (i + 1) + " dengan nama: " + e)
+        })
+        //maka yang i ini mengacu ke angka dan yang e ini mengacu ke nama
+
 }
 
 
@@ -209,7 +251,7 @@ console.log("\n menggunakan map =");
         //maka seluruh elemen di variable angka akan direturn lalu dikalikan dua
         //lalu disimpam di variable angka2
     })
-    console.log(angka2.join(" - "))
+    console.log(angka2.join(" - ") + "\n \n")
 
     //kalau digantikan menggunakan forEach maka ngga mau, error karena forEach tidak mendukung pengembalian array
 }

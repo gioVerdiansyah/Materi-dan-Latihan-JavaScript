@@ -84,3 +84,17 @@ let orang = {
 
 
 // ini adalah object Literal, nanti ada juga object Constructor
+
+const restaurant = {
+    "name": "Basudewa",
+    "city": "Denpasar",
+    "favorite drink": "Es Kelapa",
+    "favorite food": "Babi Guling",
+    isVegan: false,
+
+};
+
+const name = restaurant.name;
+const favoriteDrink = restaurant["favorite drink"];
+
+// jika mau membuat nama dalam object dan menggunakan spasi wajib menggunakan string, dan cara memanggilny menggunakan kurung siku lalu string dan sama isi objectnya

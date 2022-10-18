@@ -58,4 +58,7 @@ harus menggunakan koma lalu nama variablenya apa dan nilainya
 
 didalam variable ada yang namanya : variable scope
 
+Jika dituliskan setelah variabel (x++), expression akan menghasilkan nilai variabel sebelum ditingkatkan nilainya.
+Jika dituliskan sebelum variabel (++x), expression akan menghasilkan nilai variabel setelah ditingkatkan nilainya.
+
 nanti akan dibahas

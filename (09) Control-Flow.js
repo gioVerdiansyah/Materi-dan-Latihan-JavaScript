@@ -2,7 +2,7 @@
 // kita liat dulu ini:
 
 // Normal Flow atau alur normal, maksudnya:
-// ``apabila program kita meiliki lebih dari satu statement, maa statement tersebut akan dieksekusi dari atas ke bawah atau dari ke kiri ke kanan``
+// ``apabila program kita meiliki lebih dari satu statement, maka statement tersebut akan dieksekusi dari atas ke bawah atau dari ke kiri ke kanan``
 
 // contoh program:
 

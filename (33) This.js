@@ -58,14 +58,15 @@ this.hallo();
 
 
 // cara 2 - object literal
-let obj = { a: 10, nama: "sofyan verdi" };
-obj.halo = function() {
-    console.log(this); // yang dikembalikan maka yang objnya
-    console.log("hallo object literal menggunakan this")
+{
+    let obj = { a: 10, nama: "sofyan verdi" };
+    obj.halo = function() {
+        console.log(this); // yang dikembalikan maka yang objnya
+        console.log("hallo object literal menggunakan this")
+    }
+    obj.halo();
+    // sekarang dia mengembalikan object yang bersangkutan(object diatas)
 }
-obj.halo();
-// sekarang dia mengembalikan object yang bersangkutan(object diatas)
-
 
 // cara 3 - construcctur
 

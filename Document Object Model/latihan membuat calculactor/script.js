@@ -200,7 +200,6 @@ if (typeof(Storage) !== 'undefined') {
 } else {
     alert('Browser tidak mendukung Web Storage');
 }
-
 // strorage riwayat perhitungan
 const CACHE_KEY = "calculation_history";
 

@@ -57,3 +57,45 @@ Angka Spesial:
 - Infinity 2/0 = Infinity
 - -Infinity -2/0 = -Infinity
 - NaN 0/0 = NaN (Not a Number)
+
+BigInt
+Pada JavaScript, tipe data “Number” hanya mencakup nilai dari -(253 - 1) hingga (253 - 1). Untuk kebutuhan umum, sebenarnya nilai tersebut sudah sangat cukup. Namun, akan ada kebutuhan tertentu di mana kita membutuhkan cakupan nilai yang lebih besar, seperti untuk kriptografi atau menentukan waktu hingga presisi microsecond.
+
+Untuk nilai di luar Number, kita bisa menggunakan tipe BigInt. Untuk membedakan tipe BigInt dan Number, tambahkan karakter n di akhir angka. Contohnya adalah seperti kode di bawah ini. Bandingkan dengan yang bertipe Number.
+
+const bigNumber = 1234567890123456789012345678901234567890n;
+const myInt = 1234567890123456789012345678901234567890;
+
+console.log(bigNumber);
+console.log(myInt);
+
+Meskipun digunakan untuk menyimpan angka dengan nilai besar, namun BigInt tetap bisa digunakan untuk nilai yang lebih kecil.
+
+const bigIntButSmall = 7n;
+Kita juga bisa menggunakan BigInt untuk operasi aritmatika pada umumnya. Yang membedakan adalah pada operasi pembagian, hasilnya akan dibulatkan ke bawah dan tanpa mengandung nilai desimal
+
+
+
+Symbol
+Symbol adalah tipe data baru yang dikenalkan pada ES6. Tipe data Symbol digunakan untuk menunjukkan identifier yang unik. Ketika membuat Symbol, kita bisa memberikan deskripsi atau nama symbol seperti ini:
+
+const id = Symbol("id");
+
+console.log(id);
+
+/* output
+Symbol(id)
+*/
+
+Symbol disebut sebagai identifier yang unik karena meskipun kita membuat dua variabel symbol dengan nama atau deskripsi yang sama, kedua nilainya tetap dianggap berbeda. Contohnya lihat kode berikut:
+
+const id1 = Symbol("id");
+const id2 = Symbol("id");
+
+console.log(id1 == id2);
+
+/* output
+false
+*/
+
+Symbol ini umumnya digunakan sebagai nama property dari Object.

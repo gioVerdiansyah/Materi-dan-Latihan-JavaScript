@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{width: max-content;display: flex;flex-direction: column;}
+        form #send{width: max-content;}
+        ul li{background-color: aliceblue;}
+        ul li:nth-child(even){background-color: azure;}
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="txt" placeholder="masukkan nama" required>
+        <input type="email" name="" id="eml" placeholder="masukkan email" required>
+        <input type="password" name="" id="pass" placeholder="masukkan password" required>
+        <input type="submit"  onclick="add();" value="submit" id="send">
+    </form>
+    <ul id="tampil"></ul>
+</body>
+<script>
+    let arry_zonk = [];
+
+    function add() {
+   var txt = document.querySelector('#txt');
+   var eml = document.querySelector('#eml');
+   var pass = document.querySelector('#pass');
+   arry_zonk.push(txt.value);
+   txt.value = '';
+   arry_zonk.push(eml.value);
+   eml.value = '';
+   arry_zonk.push(pass.value);
+   pass.value = '';
+   show();
+}
+function show() {
+   var html = '';
+   var isinya = '';
+   var styl = 'width:50vw;margin-left:5px;border:1px solid black;border-radius:3px;display: flex;flex-direction: column-reverse;list-style-type:decimal;'
+   for (var i=0; i<arry_zonk.length; i++) {
+    isinya += '<h2>' + 'data array:' + arry_zonk.length + '</h2>';
+      html +='<li>' + arry_zonk[i] + '</li>';
+   }
+   var tampil = document.getElementById('tampil');
+   tampil.innerHTML = isinya
+   tampil.innerHTML = html;
+   tampil.setAttribute('style', styl)
+   console.log(arry_zonk)
+}
+</script>
+</html>

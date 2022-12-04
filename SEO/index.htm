@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    form {
+        width: max-content;
+    }
+    
+    ul li:nth-child(even) {
+        background-color: aqua !important;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="search" id="src" onfocus="fokus()" placeholder="Search" />
+        <input type="button" onclick="add()" value="Search" />
+    </form>
+    <ul id="tampil"></ul>
+</body>
+<script src="jquery-3.6.0.min.js">
+</script>
+<script src="script.js"></script>
+
+</html>

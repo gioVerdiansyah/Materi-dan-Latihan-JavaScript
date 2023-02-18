@@ -1,0 +1,27 @@
+{
+    "name": "verdi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node NodeJS_01/2_Menjalankan-Project-Node.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gioVerdiansyah/Materi-dan-Latihan-JavaScript.git"
+    },
+    "author": "Verdiansyah",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gioVerdiansyah/Materi-dan-Latihan-JavaScript/issues"
+    },
+    "homepage": "https://github.com/gioVerdiansyah/Materi-dan-Latihan-JavaScript#readme",
+    "dependencies": {
+        "lodash": "^4.17.21"
+    }
+}

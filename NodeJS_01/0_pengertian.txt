@@ -1,0 +1,47 @@
+#Pengertian Node.js
+
+Node.js adalah perangkat lunak yang didesain untuk mengembangkan aplikasi berbasis web dan ditulis dalam sintaks bahasa pemrogaman JavaScript. Dapat dikatakan juga, Node.js adalah sebuah runtime environment untuk JavaScript yang sifatnya open-source dan cross-platform. Dengan Node.js, menjalankan kode JavaScript tidak hanya terbatas pada lingkungan browser tetapi dapat di mana saja. Untuk membangun kemampuan menjalankan JavaScript dari sisi server, Node.js dibangun menggunakan engine JavaScript V8 milik Google. Jangan sampai keliru, Node.js dan JavaScript merupakan dua hal yang saling berkaitan namun berbeda. Node.js merupakan platform yang dapat menjalankan kode JavaScript yang bertugas mengeksekusi kode JavaScript sebelum halaman website ditampilkan di browser. Singkatnya, Node.js merupakan platfrom, sedangkanJavaScript merupakan bahasa pemrogaman. Node.js juga menyediakan banyak library/module JavaScript yang dapat membantu menyederhanakan pengembangan aplikasi web. 
+
+#Sejarah Singkat Node.js
+
+Node.js pertama kali diciptakan oleh Ryan Dahl pada tahun 2009. Ryan Dahl merupakan seorang pengembang dari Joyent, ia memiliki ketertarikan dengan penerapan single-threaded pada bahasa pemrogaman sisi server. Setelah mencoba menggunakan Haskell, C dan Lua, akhirnya ia memilih Javascript sebagai bahasa untuk Node.js. Hal ini diawali dari situasi pada jaman dahulu yang memiliki keterbatasan, saat itu browser menjadi satu-satunya yang dapat mengeksekusi kode pada JavaScript. Oleh karena itu, untuk melakukan pengembangan aplikasi frontend dan backend seorang developer harus mempelajari bahasa pemrogaman yang berbeda, dikarenakan meskipun JavaScript terus berkembang menjadi canggih, JavasScript tetap hanya dapat digunakan dalam sisi frontend saja saat itu. Sampai saat ini, Node.js yang merupakan hasil inovasi banyak digunakan diberbagai perusahaan atau start-up untuk mengembangkan aplikasi dan website.
+
+#Fitur dan Keunggulan Node.js
+1. Single Thread
+Dalam hal ini, semua program dieksekusi di thread yang sama, mulai dari menerima permintaan hingga menyelesaikan tugas yang diperlukan dan akhirnya mengirim respons ke klien kembali. Dengan fitur ini,  Node.js mencegah reloading dan mengurangi waktu peralihan konten, sehingga lebih ekonomis digunakan dan hasilnya kinerja program menjadi lebih ringan. Model single thread juga membuat server menjadi sangat scalable (dapat menampung banyak request sekaligus) dibandingkan multi thread.
+
+2. Pustaka Server Sendiri
+Node.js yang memiliki pustaka server sendiri, sehingga Anda tidak perlu menggunakan program server web seperti Nginx dan Apache.
+
+3. Kecepatan
+Keunggulan lainnya, Node.js memiliki keunggulan dalam kecepatan dalam mengeksekusi kode dengan request yang bersamaan, lebih cepat dibandinkan PHP dan Java. Hal ini didukung oleh komponen V8 engine dari Google. Node.js juga memiliki kecepatan dalam streming data, sehingga dapat menyediakan streaming data yang sangat cepat untuk aplikasi web.
+
+4. Asynchronus
+Sifat ini dimiliki Node.js yaitu membuat Node.js beroperasi dengan cara yang tidak memblokir. Dalam penanganan input-output, request bersifat asynchronous dan non-blocking. Oleh karena itu, prosesnya tidak memerlukan output dari proses sebelumnya dan tetap dapat berjalan bersamaan.
+
+5. Non-buffering
+Program dengan Node.js tidak pernah melakukan data buffer, Node.js hanya menampilkan data dalam potongan.
+
+
+
+#Pengenalan NodeJS
+
+NodeJS diperkenalkan pertama kali oleh Ryan Dahl pada tahun 2009
+NodeJS merupakan teknologi yang bisa digunakan untuk menjalankan kode JavaScript diluar Web Browser
+NodeJS dibuat dari V8 Engine, yaitu Engine untuk Google Chrome
+NodeJS merupakan project yang Free dan OpenSource
+https://nodejs.org/ 
+
+
+#Kenapa Belajar NodeJS
+
+NodeJS mempopulerkan paradigma JavaScript Everywhere, dimana dengan menggunakan NodeJS, kita bisa membuat aplikasi berbasis server side dengan bahasa pemrograman JavaScript
+Hal ini membuat kita hanya butuh belajar bahasa pemrograman JavaScript untuk membuat aplikasi web misalnya, sehingga tidak butuh belajar bahasa pemrograman lain seperti PHP atau Java untuk server side web nya
+Saat ini NodeJS sangat populer dan banyak sekali digunakan di perusahaan teknologi, terutama untuk membantu pengembangan Web Frontend
+
+
+#Yang Tidak Bisa Dilakukan di NodeJS
+
+Pada kelas JavaScript, kita sudah membahas banyak sekali fitur JavaScript yang berjalan di Browser
+Karena NodeJS tidak berjalan di Browser, jadi tidak semua fitur JavaScript bisa dilakukan di NodeJS
+Fitur seperti Document Object Model dan banyak Web API tidak bisa dilakukan di NodeJS, hal ini karena DOM dan beberapa Web API berjalan membutuhkan Browser

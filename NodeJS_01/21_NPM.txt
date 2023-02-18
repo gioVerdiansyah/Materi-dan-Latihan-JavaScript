@@ -1,0 +1,150 @@
+Getting Started with NPM
+Semakin kompleks suatu aplikasi, semakin banyak pula package yang digunakan. Di sinilah kita memerlukan sebuah package manager. Package manager merupakan tools yang dapat membantu pengelolaan package pada proyek agar lebih mudah. Kita dapat dengan mudah memasang dan menghapus package yang dibuat oleh orang lain pada proyek kita. Selain itu, kita juga dapat menulis module/package untuk dikonsumsi secara publik.
+
+Hampir setiap bahasa pemrograman populer memiliki package manager-nya masing-masing. Java memiliki Maven dan Gradle, PHP memiliki Composer, dan Python memiliki pip. Lalu bagaimana dengan JavaScript? Tentu JavaScript juga punya! NPM adalah salah satu package manager yang banyak digunakan oleh JavaScript developer dalam mengelola package, selain NPM ada juga Yarn Package Manager.
+
+Keduanya, baik yarn atau npm, merupakan package manager yang dapat membantu kita dalam mengembangkan aplikasi web atau node. Namun, pada materi ini kita hanya akan membahas salah satu package managernya saja, yaitu NPM. Hal tersebut karena NPM merupakan package manager standar yang disediakan Node.js.
+
+Node Package Manager (NPM) merupakan pengelola package untuk JavaScript yang dapat memudahkan kita dalam mengelola package yang tersedia pada https://www.npmjs.com/. NPM ini merupakan standard package manager yang disediakan oleh Node.js dan otomatis terpasang ketika memasang Node.js pada komputer kita.
+
+Berbicara mengenai package, sebelumnya kita sudah membuat dan mengetahui fungsi module pada JavaScript. Dengan module kita dapat berbagi kode JavaScript untuk digunakan pada berkas yang berbeda. Bahkan, melalui NPM kita dapat menggunakannya pada proyek yang berbeda. Dalam arti lain, package yang tersedia pada NPM adalah sebuah module.
+
+Dalam menggunakan NPM kita dapat menulis perintah pada terminal (Linux/macOS) atau command prompt/PowerShell (Windows). Ada banyak command yang tersedia pada NPM. Untuk melihat daftarnya, kita dapat menjalankan perintah npm help pada terminal/command prompt.
+
+
+-h jika kita ingin melihat panduan penggunaan salah satu perintahnya. Contoh, Anda ingin melihat detail cara penggunaan perintah install, maka untuk melihatnya tuliskan perintah berikut:
+
+npm install -h
+Hasilnya adalah panduan dalam penggunaan perintah install.
+
+
+-h tidak hanya dapat digunakan pada perintah install saja, tetapi juga pada seluruh perintah lainnya yang ada pada NPM.
+
+Jika melihat panduan pada gambar di atas, kita bisa menemukan beberapa “aliases”. Aliases atau alias merupakan cara lain dalam melakukan perintah tersebut. Itu berarti perintah install dapat kita tuliskan dengan i, ins, isntal, add, atau yang lainnya.
+
+npm install
+npm i
+npm in
+npm ins
+npm isntal
+npm add
+ 
+// semua perintah di atas memiliki fungsi yang sama
+Alias ini dapat berupa cara cepat (shortcut) dan juga kesalahan pengejaan yang umum (install → isntall). Hal tersebut sangat membantu developer agar lebih cepat dalam menuliskan sebuah perintah di command line.
+
+Anda bisa mendapatkan penjelasan lengkap mengenai seluruh perintah yang ada di NPM pada laman resmi berikut: https://docs.npmjs.com/cli/v7/commands. Namun, terdapat beberapa perintah penting yang akan biasa kita gunakan dalam materi dan juga pengembangan aplikasi selanjutnya.
+
+
+Command	Description	Common Options
+init
+Membuat berkas package.json pada project
+[--force|-f|--yes|-y|--scope]
+install <package-name>
+Memasang dan mendaftarkan package pada berkas package.json
+[-P|--save-prod|-D|--save-dev|-O|--save-optional] [-E|--save-exact] [-B|--save-bundle] [--no-save] [--dry-run]
+run-script <command>	Menjalankan perintah yang terdapat pada objek scripts di berkas package.json	[--silent] [-- <args>...]
+uninstall <package-name>
+Menghapus dan mengeluarkan package dari berkas package.json	[-S|--save|-D|--save-dev|-O|--save-optional|--no-save]
+version
+Untuk melihat versi package yang tersedia secara global atau lokal
+[<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
+
+
+
+
+
+Installing Packages
+Setelah mengetahui gambaran singkat mengenai Node Package Manager (NPM), sekarang kita akan mulai menggunakan NPM untuk menambahkan package eksternal ke dalam project aplikasi kita. Anda dapat membuat project baru atau menggunakan project node yang telah dibuat sebelumnya. Pastikan di dalam folder project terdapat berkas package.json, jika belum, jalankan perintah npm init pada project Anda.
+
+Sebelum mulai menginstal package, kita perlu tahu terlebih dulu bahwa ada dua jenis instalasi package, yaitu local install dan global install.
+
+Local package akan dipasang di dalam direktori atau folder yang sama dengan project kita. Package ini akan diletakkan di dalam folder node_modules.
+
+Sementara global package dipasang di satu tempat pada sistem perangkat kita (tergantung pengaturan pada saat instalasi node/npm).
+
+Umumnya, semua package harus diinstal secara lokal. Ini memastikan setiap project atau aplikasi di komputer kita memiliki package dan versi yang sesuai dengan kebutuhan. Untuk menginstal package secara lokal caranya sama seperti yang telah kita bahas sebelumnya, yaitu dengan perintah npm install.
+
+npm install <package-name>
+Lalu, kapan kita menggunakan global package? Sebuah package harus diinstal secara global hanya saat ia menyediakan perintah yang dapat dieksekusi dari CLI dan digunakan kembali di semua project. Beberapa contoh package yang perlu diinstal secara global, antara lain:
+
+npm
+nodemon
+mocha
+Untuk menginstal package secara global, kita cukup menambahkan parameter -g pada perintah npm install. Di mana -g berarti global.
+
+
+Untuk menginstal package secara global, kita cukup menambahkan parameter -g pada perintah npm install. Di mana -g berarti global.
+
+npm install -g <package-name>
+Kembali ke project kita, mari tambahkan sebuah package. Sebagai contoh, kita akan menggunakan package lodash. Lodash adalah package yang berisi banyak utilitas untuk memudahkan kita dalam menulis kode JavaScript, khususnya yang berhubungan dengan array, object, string, dll.
+
+Jalankan perintah berikut pada terminal/command prompt Anda (pastikan perintah dijalankan di direktori project):
+
+npm install lodash
+Setelah instalasi berhasil, buka dan periksa file package.json Anda. Akan muncul object baru dependencies berisi package yang telah kita tambahkan ke dalam project diikuti dengan versinya.
+
+"dependencies": {
+  "lodash": "^4.17.21"
+}
+Sebenarnya terdapat dua tipe object dependencies dalam berkas package.json. Yang pertama object dependencies dan yang kedua object devDependencies. Apa perbedaannya?
+
+Objek dependencies merupakan objek yang menampung package yang kita gunakan untuk membuat aplikasi. Sedangkan objek devDependencies digunakan untuk package yang berkaitan hanya saat proses pengembangan aplikasi, contohnya seperti package jest yang digunakan untuk testing. Package seperti jest ini hanya digunakan saat proses pengembangan aplikasi. Ia tidak digunakan lagi ketika aplikasi rilis atau digunakan langsung oleh pengguna.
+
+Untuk memasang package sebagai devDependencies, kita bisa menambahkan parameter --save-dev pada perintah npm install.
+
+npm install <package-name> --save-dev
+Setelah package terpasang, maka akan ditambahkan ke berkas package.json.
+
+"devDependencies": {
+  "jest": "^26.6.3"
+}
+Di dalam project akan muncul berkas package-lock.json. Berkas ini secara otomatis dibuat oleh Node untuk menjelaskan susunan project dan package (suatu package bisa saja menggunakan package lainnya). Berkas package-lock.json juga mendefinisikan versi package yang digunakan dengan lebih spesifik. Apa maksudnya?
+
+Jika diperhatikan, pada file package.json kita menentukan versi dengan simbol caret (^). Selain caret, npm juga menggunakan simbol tilde (~). Keduanya digunakan untuk menentukan versi minor dan versi patch yang akan digunakan.
+
+Jadi, jika kita melihat versi ~1.0.2 itu berarti npm dapat menginstal versi 1.0.2 atau versi patch terbaru seperti 1.0.4. Jika versi package dituliskan dengan caret seperti ^1.0.2, itu berarti npm dapat menginstall versi 1.0.2 atau versi minor terbaru seperti 1.1.0 [6].
+
+File package-lock.json akan mendefinisikan secara spesifik mana versi yang akan digunakan.
+
+"dependencies": {
+  "lodash": {
+    "version": "4.17.21",
+    "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+    "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
+  }
+}
+
+
+
+Uninstall Package
+Kita sudah mengetahui cara memasang dan menggunakan package npm. Lalu, bagaimana caranya untuk menghapus package yang sudah tidak gunakan?
+
+Untuk melakukannya cukup mudah. Jika package berada pada objek dependencies, kita dapat menghapusnya menggunakan perintah:
+
+npm uninstall <package-name>
+Jika package terdapat pada devDependencies, kita cukup menambahkan --save-dev di akhir perintahnya.
+
+npm uninstall <package-name> --save-dev
+Contoh, jika kita ingin menghapus package lodash dari project, berarti tuliskan perintah:
+
+npm uninstall lodash
+Dengan begitu, package lodash akan dihapus dari objek dependencies pada berkas package.json.
+
+{
+  "name": "play-with-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+Selain menghapus nilainya dari package.json, perintah tersebut juga akan menghapus semua berkas yang berhubungan dengan package lodash pada folder node_modules.
+
+Setelah menghapus package, tentu fungsi-fungsi dari package lodash sudah tidak dapat kita gunakan lagi.
+
+Perintah uninstall juga memiliki beberapa alias, sehingga dapat lebih cepat dalam menuliskan perintahnya. Anda bisa melihat apa saja alias yang dapat digunakan dengan menjalankan perintah:
+
+npm uninstall -h

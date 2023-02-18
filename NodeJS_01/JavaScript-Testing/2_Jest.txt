@@ -1,0 +1,23 @@
+Jest
+Dalam penulisan kode pengujian, kita dapat menggunakan library tambahan untuk mempermudah penulisan kode pengujian.
+
+Jest merupakan salah satu framework testing paling populer untuk menuliskan kode pengujian pada bahasa pemrograman JavaScript. Jest dapat digunakan untuk menuliskan script testing pada aplikasi backend maupun frontend.
+
+Kita akan mencoba untuk menuliskan sebuah kode pengujian menggunakan framework jest.
+
+Membuat proyek baru dengan direktori bernama JavaScript-Testing.
+
+
+
+inisialisasi 
+npm init
+
+
+Setelah proyek tersebut diinisialisasi. Selanjutnya kita dapat melakukan instalasi library framework jest.
+npm install --save-dev jest
+Setelah proses instalasi selesai, buka proyek di code editor.
+Pada file package.json, kita tambahkan script untuk test dengan cara menambahkan baris kode berikut:
+  "scripts": {
+    "test": "jest"
+  }
+Penambahan script tersebut digunakan agar kita bisa menjalankan script test yang nanti kita buat menggunakan runner.

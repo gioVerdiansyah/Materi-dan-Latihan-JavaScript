@@ -1,0 +1,14 @@
+{
+    "name": "javascript-testing",
+    "version": "1.0.0",
+    "description": "latihan-testing",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "Verdi",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^29.4.3"
+    }
+}

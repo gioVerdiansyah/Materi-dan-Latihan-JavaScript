@@ -1,0 +1,44 @@
+#Antarmuka pemrogaman bebasis objek yang mempresentasikan dokumen web
+
+#DOM membuat seluruh komponen dari halaman web dapat diakses & dimanipulasi
+
+#komponen:
+    Elemen HTML
+    Attribute
+    Text
+    dll
+
+#DOM dapat dimanipulasi (Dibuat, Diubah, dihapus) menggunakan JS
+
+
+
+#DOM Tree
+nama dari sebuah struktur data pada komputer yang secara visual mirip dengan pohon
+
+Misal pada berkas HTML, batang induk tunggal adalah <html> </html> sedangkan cabang cabangnya adalah elemen elemen yang terdapat didalamnya
+
+
+Node,NodeList, dan HTMLCollection
+* Node dapat dipilih terserah, baik itu Element ataupun Text
+* NodeList adalah kumpulan Node >1 baik itu Elemen atau Text
+* HTMLCollection kumpulan Node tetapi hanya satu tipe saja, misal jika Element maka Element semua
+
+Perbedaan ini nantinya akan mempengaruhi cara penggunaannya
+
+NodeList dan HTMLCollection:
+    - Keduanya merupakan kumpulan node
+    - Struktur datanya mirip dengan Array
+    - NodeList dapat berisi node apapun, sedangkan HTMLCollection harus berisi elemen HTML
+    - HTMLCollection bersifat live sedangkan NodeList tidak
+
+
+# Struktur Hierarki DOM
+    - Root Node
+        + node yang menjadi sumber dari semua node lain di dalam DOM
+        + document
+    - Parent Node
+        + node yang berisi 1 tingkat diatas node yang lain
+        + body adalah parent dari h1,p,p,div dan a
+    - Child Node
+        + node yang berada 1 tingkat dibawah node lain
+        + h1 adalah child dari body
